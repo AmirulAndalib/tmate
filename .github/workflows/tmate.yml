@@ -11,4 +11,4 @@ jobs:
           run: |
              sudo apt-get install parallel
              npm install -g localtunnel
-             parallel -u ::: 'lt --port 6969 --subdomain amirulandalib' 'docker run --rm -p 6969:6969 wettyoss/wetty --ssh-host=amirulandalib.loca.lt'
+             parallel -u ::: 'lt --port 6969 --subdomain amirulandalib' 'docker run --rm -p 6969:6969 wettyoss/wetty --ssh-host=amirulandalib.loca.lt --ssh-user=user ssh-pass=password'
